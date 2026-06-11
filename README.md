@@ -1,72 +1,104 @@
-# 🗃 Pranab Kr Santra - Professional Research Portfolio
+# ⚛️ Pranab Santra — Deep Tech & Systems Portfolio
 
-A professional, high-performance, modular portfolio website configured for **Pranab Kr Santra**, showcasing interests and projects in **Artificial Intelligence, Machine Learning, Quantum Computing, Space Tech, and Deep Tech Innovation**.
+[![Live Site](https://img.shields.io/badge/Live-Portfolio-emerald?style=for-the-badge&logo=githubpages&logoColor=white)](https://pranabsantra45.github.io/PranabSantra/)
+[![Tech Stack](https://img.shields.io/badge/Stack-Vite%20%7C%20ES6%20%7C%20CSS3-blue?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/)
+[![Research Focus](https://img.shields.io/badge/Focus-AI/ML%20%7C%20Quantum%20%7C%20Space-purple?style=for-the-badge)](https://github.com/PranabSantra45)
+
+A premium, interactive, and fully responsive researcher portfolio designed for **Pranab Santra** (B.E. Computer Science and Engineering undergraduate at Sathyabama Institute of Science and Technology, 2024–2028). 
+
+This repository showcases theoretical research, system engineering implementations, and startup-focused innovations at the intersection of AI/ML, Quantum Computing, Space Tech, and Financial Systems.
 
 ---
 
-## 📁 Workspace Directory Structure
+## 📁 Repository Directory Structure
 
-This project uses an industry-standard modular frontend architecture compiled via **Vite**:
+The workspace is organized using a clean, production-ready modular structure compiled via **Vite**:
 
 ```
 portfolio/
+├── .github/workflows/
+│   └── deploy.yml           # GitHub Actions automated Pages deployment
 ├── src/
 │   ├── css/
-│   │   ├── main.css             # Main orchestrator importing modular stylesheets
-│   │   ├── variables.css        # Colors, theme variables (dark/light), system keyframes
-│   │   ├── layout.css           # Resets, graph backdrop, headers, section layouts
-│   │   └── components.css       # Custom widgets (CLI terminal, canvas styles, buttons, forms)
+│   │   ├── main.css         # Entry CSS importing all modules
+│   │   ├── variables.css    # Color schemes, variables, and keyframe animations
+│   │   ├── layout.css       # Navbars, graph backdrop, headers, section layouts
+│   │   └── components.css   # Widgets (CLI terminal, canvas, buttons, timelines)
 │   ├── js/
-│   │   ├── main.js              # Entry module importing and initializing sub-modules
-│   │   ├── quantum-canvas.js    # Interactive wavefunction collapse physics canvas
-│   │   ├── terminal-console.js  # Diagnostic CLI commands router
-│   │   └── ui-controllers.js    # Scroll observers, tabs switcher, and portfolio filters
-│   └── index.html               # Main semantic HTML structure
-├── package.json                 # Project dependencies & scripts (Vite config)
-├── vite.config.js               # Dev server configuration (sets root to /src)
-└── README.md                    # This documentation file
+│   │   ├── main.js          # Entry loader initializing script modules
+│   │   ├── quantum-canvas.js# Wavefunction probability collapse physics simulator
+│   │   ├── terminal-console.js # Diagnostic CLI commands router
+│   │   └── ui-controllers.js# Scroll observers, tabs, and category filters
+│   └── index.html           # Main semantic HTML structure
+├── package.json             # Project dependencies & build commands
+├── vite.config.js           # Vite server configurations
+└── README.md                # This documentation file
 ```
 
 ---
 
-## 🛠 Features Setup & Interactivity
+## 🌟 Core Interactive Features
 
-### 1. Quantum State Collapse Simulation
-A canvas particle animation rendering probability orbital paths. Moving your cursor collapsible nodes locally, drawing measurement concentric vectors and calculations overlay readouts.
+### 1. Quantum Wavefunction State Collapse Canvas
+The background features an interactive coordinate system simulating probability orbital paths. Moving your cursor triggers a localized "measurement collapse" of nodes to concentric target vectors, printing real-time coordinate logs.
 
 ### 2. Diagnostic Command-Line Interface (CLI)
-An interactive terminal widget allowing users to query diagnostic profiles. Try typing these commands:
-*   `help`: lists commands.
-*   `about`: prints academic background credentials (B.E. CSE at Sathyabama).
-*   `diagnose`: executes local module diagnostic system status loops.
-*   `run ml-predict`: parses EV charging logs datasets and outputs R² regressions with ASCII curves.
-*   `quantum-telemetry`: computes probability vectors coherence state maps.
-*   `clear`: clears console logs.
+An embedded terminal emulator is integrated into the Explorations section. Try inputting these commands directly:
+*   `help` — Lists all available system utilities.
+*   `about` — Prints academic and startup-focused bio details.
+*   `diagnose` — Triggers a hardware and systems diagnosis animation loop.
+*   `run ml-predict` — Simulates regression models on EV charging datasets and outputs ASCII curves.
+*   `quantum-telemetry` — Computes probability vectors coherence state maps.
+*   `clear` — Wipes the terminal console history.
 
 ---
 
-## 🚀 How to Run Locally
+## 🛠 Deployed Projects & Architecture
 
-### 1. Prerequisite
-Ensure you have [Node.js](https://nodejs.org) (v18 or higher recommended) installed.
+1. **EV Charging Data Analysis & Prediction**
+   * *Tech Stack:* Python, Jupyter, Flask, HTML/CSS/JS.
+   * *Focus:* Forecasting energy grid load distributions via regression models deployed as an interactive dashboard.
+2. **Smart Live Transport System**
+   * *Tech Stack:* Arduino, ESP8266, React, Firebase Firestore.
+   * *Focus:* Real-time public transit tracking using geolocations, hardware sensors, and cloud state synchronization.
+3. **P2QR Minimal Inventory Tool**
+   * *Tech Stack:* Python, Tkinter, SQL, QR-Code API.
+   * *Focus:* Streamlined local inventory manager with automated QR code scanning, printing, and database lookup.
 
-### 2. Dependency Installation
-Navigate to the root directory in your terminal and install Vite:
+---
+
+## 🚀 Getting Started
+
+### 1. Prerequisites
+Ensure you have [Node.js](https://nodejs.org) (v18+) installed.
+
+### 2. Installation
+Clone the repository, navigate into the project directory, and install dependencies:
 ```bash
-cd "C:\Users\Pranab Santra\Desktop\portfolio"
+git clone https://github.com/PranabSantra45/PranabSantra.git
+cd PranabSantra
 npm install
 ```
 
-### 3. Start Development Server
-Boot up Vite's local dev server with hot module replacement:
+### 3. Local Development Server
+Spin up the hot-reloading local server:
 ```bash
 npm run dev
 ```
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ### 4. Build for Production
-To bundle, minify, and optimize the static assets (compiling ES6 modules to optimized chunks):
+To package, minify, and optimize the bundle for hosting:
 ```bash
 npm run build
 ```
-Vite will output the production bundle inside the `dist/` directory, ready to deploy to GitHub Pages, Netlify, or Vercel.
+Vite compiles and outputs the distribution folder inside `./dist/`.
+
+---
+
+## 📬 Contact & Coordinates
+
+*   **Email:** [pranabsantra466@gmail.com](mailto:pranabsantra466@gmail.com) | [pranabsantra@outlook.in](mailto:pranabsantra@outlook.in)
+*   **Phone:** [+91 8927860181](tel:+918927860181)
+*   **Geodata:** Kolkata & Chennai, India
+*   **LinkedIn:** [linkedin.com/in/pranabsantra](https://www.linkedin.com/in/pranabsantra)
