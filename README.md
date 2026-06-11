@@ -1,6 +1,7 @@
 # ⚛️ Pranab Santra — Deep Tech & Systems Portfolio
 
-[![Live Site](https://img.shields.io/badge/Live-Portfolio-emerald?style=for-the-badge&logo=githubpages&logoColor=white)](https://pranabsantra45.github.io/PranabSantra/)
+The portfolio is live there : [![Live Site](https://img.shields.io/badge/Live-Portfolio-emerald?style=for-the-badge&logo=githubpages&logoColor=white)](https://pranabsantra45.github.io/PranabSantra/)
+
 [![Tech Stack](https://img.shields.io/badge/Stack-Vite%20%7C%20ES6%20%7C%20CSS3-blue?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/)
 [![Research Focus](https://img.shields.io/badge/Focus-AI/ML%20%7C%20Quantum%20%7C%20Space-purple?style=for-the-badge)](https://github.com/PranabSantra45)
 
@@ -37,7 +38,7 @@ portfolio/
 
 ---
 
-## 🌟 Core Interactive Features
+## Core Interactive Features
 
 ### 1. Quantum Wavefunction State Collapse Canvas
 The background features an interactive coordinate system simulating probability orbital paths. Moving your cursor triggers a localized "measurement collapse" of nodes to concentric target vectors, printing real-time coordinate logs.
@@ -53,7 +54,7 @@ An embedded terminal emulator is integrated into the Explorations section. Try i
 
 ---
 
-## 🛠 Deployed Projects & Architecture
+## Deployed Projects & Architecture
 
 1. **EV Charging Data Analysis & Prediction**
    * *Tech Stack:* Python, Jupyter, Flask, HTML/CSS/JS.
@@ -67,7 +68,7 @@ An embedded terminal emulator is integrated into the Explorations section. Try i
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Prerequisites
 Ensure you have [Node.js](https://nodejs.org) (v18+) installed.
@@ -96,9 +97,6 @@ Vite compiles and outputs the distribution folder inside `./dist/`.
 
 ---
 
-## 📬 Contact & Coordinates
+## Contact & Coordinates
 
-*   **Email:** [pranabsantra466@gmail.com](mailto:pranabsantra466@gmail.com) | [pranabsantra@outlook.in](mailto:pranabsantra@outlook.in)
-*   **Phone:** [+91 8927860181](tel:+918927860181)
-*   **Geodata:** Kolkata & Chennai, India
 *   **LinkedIn:** [linkedin.com/in/pranabsantra](https://www.linkedin.com/in/pranabsantra)
