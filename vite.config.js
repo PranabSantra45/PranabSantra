@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   root: 'src',
+  base: '/PranabSantra/',
   build: {
     outDir: '../dist',
     emptyOutDir: true
