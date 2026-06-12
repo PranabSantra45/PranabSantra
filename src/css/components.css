@@ -116,6 +116,14 @@
     line-height: 1.15;
 }
 
+.gradient-text {
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+}
+
 .hero-dynamic-title {
     font-family: var(--font-mono);
     font-size: 1.5rem;
