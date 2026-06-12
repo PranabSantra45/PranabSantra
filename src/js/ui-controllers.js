@@ -204,17 +204,42 @@ export function initContactForm() {
         submitBtn.disabled = true;
         submitBtn.querySelector('span').textContent = 'TRANSMITTING_DATA...';
 
-        setTimeout(() => {
-            showStatus(`// SUCCESS: Data packages dispatched. Thank you, ${name}.`, 'success');
-            
-            const submissions = JSON.parse(localStorage.getItem('academicSubmissions') || '[]');
-            submissions.push({ name, email, subject, message, date: new Date().toISOString() });
-            localStorage.setItem('academicSubmissions', JSON.stringify(submissions));
-
-            form.reset();
+        // Submit via AJAX to FormSubmit.co using the action endpoint
+        fetch(form.action, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify({
+                name: name,
+                email: email,
+                _subject: `New Portfolio Message: ${subject}`,
+                message: message
+            })
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Network response error");
+            }
+            return response.json();
+        })
+        .then(data => {
+            if (data.success === "true" || data.success === true) {
+                showStatus(`// SUCCESS: Data packages dispatched. Thank you, ${name}.`, 'success');
+                form.reset();
+            } else {
+                showStatus('// ERROR: Transmission failed on node server.', 'error');
+            }
+        })
+        .catch(err => {
+            console.error("Form transmission error:", err);
+            showStatus('// ERROR: Transmission link interrupted. Try again.', 'error');
+        })
+        .finally(() => {
             submitBtn.disabled = false;
             submitBtn.querySelector('span').textContent = originalText;
-        }, 1200);
+        });
     });
 
     function showStatus(text, type) {
